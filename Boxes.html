@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background: #edf1f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 60px;
+                height: 100vh;
+                font-family: sans-serif;
+            }
+
+            .box {
+                width: 180px;
+                height: 180px;
+                border-radius: 25px;
+                background: #edf1f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            /* 2 shadow h ek white on top left and dusra dark on bottom right */
+            .shadow1 {
+                box-shadow: -20px -20px 28px #ffffff,
+                    20px 20px 28px rgba(13, 39, 80, 0.18);
+            }
+            /* inset se vo shadow indide jayega */
+            .shadow2 {
+                box-shadow: inset -20px -20px 28px #ffffff,
+                    inset 20px 20px 28px rgba(13, 39, 80, 0.18);
+            }
+            /* 4 shadows plate jysa lag raha h haha */
+            .mix-shadow {
+                box-shadow: inset -20px -20px 28px #ffffff,
+                    inset 20px 20px 28px rgba(13, 39, 80, 0.18),
+                    -20px -20px 28px #ffffff,
+                    20px 20px 28px rgba(13, 39, 80, 0.18);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box shadow1">Search on tap</div>
+        <div class="box shadow2">Can't search ?</div>
+        <div class="box mix-shadow">I'm at home</div>
+    </body>
+</html>
